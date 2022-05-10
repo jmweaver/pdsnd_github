@@ -16,6 +16,6 @@ This project is written in python, and will allow the user to view the associate
 *washington.csv
 
 ### Credits
-[1]: https://udacity.github.io/git-styleguide/ "Udacity Git Commit Style Guide"
-[2]: https://wordpress.com/support/markdown-quick-reference/ "Markdown Quick Reference"
-[3]: https://stackoverflow.com/questions/10565217/do-you-push-every-single-commit/ "Opinions on Commit Frequency"
+- [Udacity Git Commit Style Guide](https://udacity.github.io/git-styleguide/)
+- [Markdown Quick Reference](https://wordpress.com/support/markdown-quick-reference/)
+- [Opinions on Commit Frequency](https://stackoverflow.com/questions/10565217/do-you-push-every-single-commit/)
