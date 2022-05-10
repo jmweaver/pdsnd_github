@@ -7,13 +7,13 @@ May 10, 2022
 Udacity Bikeshare Python Project
 
 ### Description
-Describe what your project is about and what it does
+This project is written in python, and will allow the user to view the associated city .csv files in chunks, and then see curated statistics about the data.
 
-**Files used**
-bikeshare.py
-chicago.csv
-new_york_city.csv
-washington.csv
+### Files used
+*bikeshare.py
+*chicago.csv
+*new_york_city.csv
+*washington.csv
 
 ### Credits
 [1]: https://udacity.github.io/git-styleguide/ "Udacity Git Commit Style Guide"
