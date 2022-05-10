@@ -9,10 +9,13 @@ Udacity Bikeshare Python Project
 ### Description
 Describe what your project is about and what it does
 
-### Files used
-Include the files used
+**Files used**
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-[1]: https://www.udacity.com/ "Udacity Website"
-[1]: https://wordpress.com/support/markdown-quick-reference/ "Markdown Quick Reference"
-
+[1]: https://udacity.github.io/git-styleguide/ "Udacity Git Commit Style Guide"
+[2]: https://wordpress.com/support/markdown-quick-reference/ "Markdown Quick Reference"
+[3]: https://stackoverflow.com/questions/10565217/do-you-push-every-single-commit/ "Opinions on Commit Frequency"
