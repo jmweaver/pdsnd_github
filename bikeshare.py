@@ -214,11 +214,22 @@ def data_crawl(df): # display data upon request
     print(df.shape)
     while True: # loop to prompt user whether they would like to see data
         try:
-            view_data = input("\nWould you like to view 5 rows of individual trip data?  Enter Yes or No.").lower()
+            view_data = input("\nWould you like to view rows of individual trip data?  Enter Yes or No.").lower()
         except:
             print("Please enter either Yes or No.")
         if view_data != 'yes' and view_data != 'no':
             print("Please enter either Yes or No.")
+            continue
+        else:
+            break
+        
+    while True: # loop to ask number of rows to view
+        try:
+            num_rows = int(input('How many rows would you like to view at a time? (1-100)'))
+        except ValueError:
+            print("Please enter an integer between 1 and 100.  (No strings allowed!)")
+        if num_rows <= 0 or num_rows > 100:
+            print('Please enter a positive integer.')
             continue
         else:
             break
@@ -229,11 +240,11 @@ def data_crawl(df): # display data upon request
             print('\nYou have reached the end of the data.  Presenting statistics on selected dataset.')
             break
         else:      
-            print(df.iloc[start:start+5])
-            start += 5
+            print(df.iloc[start:start+num_rows])
+            start += num_rows
             while True:
                 try:
-                    view_data = input("\nDo you wish to view 5 more lines?  Enter Yes or No.").lower()
+                    view_data = input("\nDo you wish to view {} more lines?  Enter Yes or No.".format(num_rows)).lower()
                 except:
                     print("Please enter either Yes or No.")
                 if view_data != 'yes' and view_data != 'no':
@@ -245,7 +256,7 @@ def data_crawl(df): # display data upon request
     if start <= df.shape[0]:  #if statement to correctly display number of lines viewed
         print('\n{} total lines of data viewed.'.format(start))
     else:
-        print('\n{} total lines of data viewed.'.format(df.shape[0])
+        print('\n{} total lines of data viewed.'.format(df.shape[0]))
     print('-'*40)
     
 def main():
